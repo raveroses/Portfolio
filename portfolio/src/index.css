@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: black;
+  height: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.header {
+  background-color: white;
+  padding: 8px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.logoname {
+}
+.logoname h5 {
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.navbar ul li {
+  float: left;
+  margin-left: 20px;
+}
+.navbar ul li a {
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-decoration 1s ease, font-size 0.3s ease;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
+  font-size: 20px;
+}
+.home {
+  padding: 50px 80px;
+}
+
+.images img {
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left;
+  height: 400px;
+  animation: Titilope 2s forwards;
+}
+
+@keyframes Titilope {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.detail {
+  color: white;
+  font-size: 15px;
+  margin-left: 30px;
+  width: 60%;
+}
+.detail h5 {
+  font-size: 25px;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: text-decoration 1s ease, font-size 0.3s ease;
+}
+
+.detail h6 {
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.project-image img {
+  width: 350px;
+}
+
+.written {
+  color: white;
+  padding: 20px;
+}
+.written h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.written h6 {
+  font-size: 13px;
+  padding-top: 10px;
+}
+.written p {
+  font-size: 15px;
+  line-height: 25px;
+}
+.content {
+  border: none;
+  background-color: transparent;
+  box-shadow: 1px 1px 1px white;
+  border-radius: 10px;
+}
+.project-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 170px;
+}
+.live a {
+  font-size: 14px;
+  text-decoration: none;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.view a {
+  font-size: 14px;
+  text-decoration: none;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.code {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.whatsapp {
+  background-color: #014421;
+  width: 130px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  transform: rotate(270deg) translate(40px, 1100px);
+}
+
+.whatsapp a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+.firstbox h5 {
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+.connect {
+  display: flex;
+  align-items: flex-start;
+  align-content: center;
+}
+.firstbox {
+  box-shadow: 1px 1px 1px 1px lightgray;
+  padding: 40px 40px;
+  width: 300px;
+  border-radius: 8px;
+}
+.firstbox a {
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 500;
+  background: linear-gradient(to right, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  width: 850px;
+  padding: 20px 30px;
+  box-shadow: 1px 1px 1px 1px lightgray;
+  border-radius: 7px;
+}
+form label {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 7px;
+}
+form input {
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 13px 5px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+form input:focus {
+  outline: none;
+}
+form textarea {
+  border: 1px solid lightgray;
+  padding: 30px 5px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  width: 100%;
+  resize: none;
+}
+form textarea:focus {
+  outline: none;
+}
+
+form button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 11px 50px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-left: 660px;
+}
