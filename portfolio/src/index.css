@@ -169,6 +169,8 @@ html {
   width: 130px;
   padding: 7px 10px;
   border-radius: 3px;
+  position: fixed;
+  top: 300px;
   transform: rotate(270deg) translate(40px, 1100px);
 }
 
@@ -189,6 +191,8 @@ html {
   display: flex;
   align-items: flex-start;
   align-content: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 .firstbox {
   box-shadow: 1px 1px 1px 1px lightgray;
