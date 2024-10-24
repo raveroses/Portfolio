@@ -15,27 +15,34 @@ export default function Header() {
             <Link to="/"> Home</Link>
           </li>
           <li>
-            <a href="">Portfolio</a>
+            <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            {" "}
-            <a href="">Contact</a>
+            <Link to="/contact" Contact>
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/hummanitarian">Hummanitarian</Link>
           </li>
 
           <li>
-            <a href="">
+            <Link to="#">
               <FaGithub className="icon" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to="#">
               <FaXTwitter className="icon" />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="">
+            <Link to="#">
               <FaFacebook className="icon" />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

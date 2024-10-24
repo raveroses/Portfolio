@@ -85,9 +85,7 @@ html {
 }
 .detail h5 {
   font-size: 25px;
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: whitesmoke;
   transition: text-decoration 1s ease, font-size 0.3s ease;
 }
 
@@ -143,17 +141,13 @@ html {
 .live a {
   font-size: 14px;
   text-decoration: none;
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: whitesmoke;
 }
 
 .view a {
   font-size: 14px;
   text-decoration: none;
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: whitesmoke;
 }
 
 .code {
@@ -180,9 +174,7 @@ html {
   text-decoration: none;
 }
 .firstbox h5 {
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: whitesmoke;
   font-size: 25px;
   font-weight: 600;
   padding-bottom: 15px;
@@ -205,9 +197,7 @@ html {
   font-size: 15px;
   text-decoration: none;
   font-weight: 500;
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: whitesmoke;
   padding-bottom: 30px;
 }
 
