@@ -8,7 +8,7 @@ export default function Home() {
           <h5>Front-End Developer</h5>
           <h6>Results-Driven Front-End Developer </h6>
           <p>
-            A front-end developer that's so passionate in building a functional
+            A front-end developer who's so passionate in building a functional
             website.
           </p>
         </div>

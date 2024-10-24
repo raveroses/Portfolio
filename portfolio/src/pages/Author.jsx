@@ -1,6 +1,9 @@
 export default function Author() {
   return (
-    <>
+    <div className="contact-flex">
+      <div className="auth-image">
+        <img src="/images/auth.JPG" alt="Author-image" />
+      </div>
       <div className="detail">
         <h5>Front-End Developer</h5>
         <h6>Results-Driven Front-End Developer </h6>
@@ -12,6 +15,6 @@ export default function Author() {
           priority, and I deliver it to their satisfaction.
         </p>
       </div>
-    </>
+    </div>
   );
 }

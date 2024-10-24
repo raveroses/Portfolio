@@ -23,24 +23,24 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/author">About</Link>
           </li>
           <li>
-            <Link to="/hummanitarian">Hummanitarian</Link>
+            <Link to="/hummanitarian">Event</Link>
           </li>
 
           <li>
-            <Link to="#">
+            <Link to="https://github.com/raveroses">
               <FaGithub className="icon" />
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="https://x.com/TitilopeNode">
               <FaXTwitter className="icon" />
             </Link>
           </li>
           <li>
-            <Link to="#">
+            <Link to="https://web.facebook.com/profile.php?id=100062592943567">
               <FaFacebook className="icon" />
             </Link>
           </li>

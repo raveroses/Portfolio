@@ -6,7 +6,6 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Contact() {
   return (
     <>
-      <p style={{ color: "white" }}>nttttet</p>
       <div className="connect">
         <div className="firstbox">
           <h5> Connect with me</h5>

@@ -7,7 +7,7 @@
 
 body,
 html {
-  background-color: black;
+  background-color: rgb(42, 40, 40);
   height: 100%;
   font-family: "Kumbh Sans", sans-serif;
 }
@@ -21,8 +21,6 @@ html {
   align-items: center;
 }
 
-.logoname {
-}
 .logoname h5 {
   font-size: 20px;
   font-weight: 700;
@@ -135,8 +133,10 @@ html {
 .project-flex {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  margin-top: 170px;
+  gap: 57px;
+  margin-top: 30px;
+  justify-content: center;
+  padding: 0px 50px;
 }
 .live a {
   font-size: 14px;
@@ -165,7 +165,7 @@ html {
   border-radius: 3px;
   position: fixed;
   top: 300px;
-  transform: rotate(270deg) translate(40px, 1100px);
+  transform: rotate(270deg) translate(40px, 1113px);
 }
 
 .whatsapp a {
@@ -188,7 +188,7 @@ html {
 }
 .firstbox {
   box-shadow: 1px 1px 1px 1px lightgray;
-  padding: 40px 40px;
+  padding: 40px 40px 90px 40px;
   width: 300px;
   border-radius: 8px;
 }
@@ -255,4 +255,17 @@ form button {
   font-weight: 500;
   border-radius: 5px;
   margin-left: 660px;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 70px;
+}
+
+.auth-image img {
+  width: 300px;
 }
