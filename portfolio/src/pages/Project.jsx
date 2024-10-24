@@ -18,13 +18,17 @@ export default function Project() {
               <h6>{item.language}</h6>
               <div className="code">
                 <div className="live">
-                  <a href={item.live}>
+                  <a href={item.live} target="_blank" rel="noopener noreferrer">
                     <SiGitconnected />
                     Live preview
                   </a>
                 </div>
                 <div className="view">
-                  <a href={item.github}>
+                  <a
+                    href={item.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {" "}
                     <FaGithub /> View Code
                   </a>

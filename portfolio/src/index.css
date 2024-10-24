@@ -14,7 +14,7 @@ html {
 
 .header {
   background-color: white;
-  padding: 8px 80px;
+  padding: 20px 80px;
   display: flex;
   justify-content: space-between;
   align-content: center;

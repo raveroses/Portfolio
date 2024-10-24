@@ -18,9 +18,7 @@ export default function Header() {
             <Link to="/portfolio">Portfolio</Link>
           </li>
           <li>
-            <Link to="/contact" Contact>
-              Contact
-            </Link>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
             <Link to="/author">About</Link>
@@ -30,17 +28,29 @@ export default function Header() {
           </li>
 
           <li>
-            <Link to="https://github.com/raveroses">
+            <Link
+              to="https://github.com/raveroses"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="icon" />
             </Link>
           </li>
           <li>
-            <Link to="https://x.com/TitilopeNode">
+            <Link
+              to="https://x.com/TitilopeNode"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaXTwitter className="icon" />
             </Link>
           </li>
           <li>
-            <Link to="https://web.facebook.com/profile.php?id=100062592943567">
+            <Link
+              to="https://web.facebook.com/profile.php?id=100062592943567"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook className="icon" />
             </Link>
           </li>

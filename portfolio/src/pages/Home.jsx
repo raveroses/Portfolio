@@ -8,8 +8,12 @@ export default function Home() {
           <h5>Front-End Developer</h5>
           <h6>Results-Driven Front-End Developer </h6>
           <p>
-            A front-end developer who's so passionate in building a functional
-            website.
+            A front-end developer passionate about building functional,
+            user-friendly websites. Skilled in HTML, CSS, JavaScript, and
+            creating responsive designs, I focus on delivering smooth user
+            experiences. I'm dedicated to writing clean, efficient code and
+            always looking to improve my skills and stay updated with new
+            technologies.
           </p>
         </div>
         <div className="images">
