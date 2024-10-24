@@ -77,14 +77,14 @@ html {
 
 .detail {
   color: white;
-  font-size: 15px;
-  margin-left: 30px;
-  width: 60%;
+  margin-left: 0px;
+  width: 75%;
 }
 .detail h5 {
-  font-size: 25px;
+  font-size: 20px;
   color: whitesmoke;
   transition: text-decoration 1s ease, font-size 0.3s ease;
+  margin-bottom: 20px;
 }
 
 .detail h6 {
@@ -263,9 +263,48 @@ form button {
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 70px;
+  margin-top: 120px;
+}
+
+.tech {
+  width: 75%;
+  margin-top: 50px;
+}
+.tech h5 {
+  color: white;
+  text-align: left;
+  font-size: 20px;
+  padding-bottom: 30px;
 }
 
 .auth-image img {
   width: 300px;
+}
+
+.tech-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 90px;
+}
+.st {
+  background-color: #014421;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+.techcon {
+  font-size: 50px;
+  color: white;
+}
+
+.experience {
+  width: 75%;
+  margin-top: 50px;
+}
+
+.experience h5 {
+  font-size: 20px;
+  color: white;
+  padding-bottom: 30px;
 }
