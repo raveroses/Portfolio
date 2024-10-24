@@ -48,7 +48,19 @@ export default function Author() {
         <h5>Experience</h5>
 
         <div className="realExperience">
-          <p></p>
+          <h6>Frontend Developer - Web3Bridge</h6>
+          <p>
+            Here's a corrected version of your text: As we all know, learning is
+            a continuous process. I joined the Web3Bridge Bootcamp, where I
+            gained valuable experience in managing projects efficiently while
+            meeting deadlines. It wasn’t just about technical skills—teamwork
+            and collaboration were essential as we built a ChatGPT clone. Beyond
+            technical expertise, soft skills like communication were emphasized.
+            One of the most important experiences I had was presenting to my
+            peers, preparing us for future professional interactions. At the
+            Bootcamp, we were equipped with both technical and soft skills to
+            ensure well-rounded development.
+          </p>
         </div>
       </div>
     </div>

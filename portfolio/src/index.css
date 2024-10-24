@@ -92,7 +92,11 @@ html {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-
+.detail p {
+  line-height: 35px;
+  color: white;
+  font-size: 17px;
+}
 .flex {
   display: flex;
   justify-content: space-between;
@@ -307,4 +311,16 @@ form button {
   font-size: 20px;
   color: white;
   padding-bottom: 30px;
+}
+
+.realExperience h6 {
+  color: white;
+  font-size: 17px;
+}
+
+.realExperience p {
+  font-size: 17px;
+  padding-top: 10px;
+  color: white;
+  line-height: 35px;
 }

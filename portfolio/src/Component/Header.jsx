@@ -23,9 +23,6 @@ export default function Header() {
           <li>
             <Link to="/author">About</Link>
           </li>
-          <li>
-            <Link to="/hummanitarian">Event</Link>
-          </li>
 
           <li>
             <Link
