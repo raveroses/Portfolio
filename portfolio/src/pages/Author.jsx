@@ -3,14 +3,22 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Author() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+    });
+  }, []);
   return (
     <div className="contact-flex">
-      <div className="auth-image">
+      <div className="auth-image" data-aos="fade-down-left">
         <img src="/images/auth.JPG" alt="Author-image" />
       </div>
-      <div className="detail">
+      <div className="detail" data-aos="fade-right">
         <h5>About Me</h5>
 
         <p>
@@ -22,7 +30,7 @@ export default function Author() {
         </p>
       </div>
 
-      <div className="tech">
+      <div className="tech" data-aos="zoom-in">
         <h5>Technologies</h5>
         <div className="tech-flex">
           <div className="st">
@@ -44,9 +52,13 @@ export default function Author() {
         </div>
       </div>
 
-      <div className="experience">
+      <div
+        className="experience"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <h5>Experience</h5>
-
         <div className="realExperience">
           <h6>Frontend Developer - Web3Bridge</h6>
           <p>

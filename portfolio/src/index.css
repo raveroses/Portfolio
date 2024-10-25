@@ -272,7 +272,7 @@ form button {
 
 .tech {
   width: 75%;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 .tech h5 {
   color: white;
@@ -283,6 +283,7 @@ form button {
 
 .auth-image img {
   width: 300px;
+  margin-bottom: 40px;
 }
 
 .tech-flex {
@@ -304,7 +305,8 @@ form button {
 
 .experience {
   width: 75%;
-  margin-top: 50px;
+  margin-top: 90px;
+  padding-bottom: 300px;
 }
 
 .experience h5 {
