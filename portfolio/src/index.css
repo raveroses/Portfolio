@@ -20,7 +20,18 @@ html {
   align-content: center;
   align-items: center;
 }
-
+.sticky {
+  background-color: white;
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 .logoname h5 {
   font-size: 20px;
   font-weight: 700;

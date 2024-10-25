@@ -1,11 +1,32 @@
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa";
-
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 export default function Header() {
+  const [check, setChecker] = useState(false);
+
+  const handleScroll = () => {
+    const scrollPosition = window.scrollY; // Get the current vertical scroll position
+    console.log("Current scroll position:", scrollPosition);
+    if (window.scrollY > 39) {
+      setChecker(true);
+    } else {
+      setChecker(false);
+    }
+  };
+
+  useEffect(() => {
+    // Add the scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array means this effect runs once when the component mounts
   return (
-    <div className="header">
+    <div className={check ? "sticky" : "header"}>
       <div className="logoname">
         <h5>{"{TitilopeNode=>"}</h5>
       </div>

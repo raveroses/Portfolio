@@ -13,6 +13,7 @@ export default function Author() {
       duration: 1000,
     });
   }, []);
+
   return (
     <div className="contact-flex">
       <div className="auth-image" data-aos="fade-down-left">
