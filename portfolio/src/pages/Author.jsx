@@ -10,7 +10,7 @@ import { useEffect } from "react";
 export default function Author() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
+      duration: 1000,
     });
   }, []);
   return (

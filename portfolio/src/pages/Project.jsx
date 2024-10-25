@@ -2,8 +2,15 @@ import { SiGitconnected } from "react-icons/si";
 
 import Detail from "../Component/Detail";
 import { FaGithub } from "react-icons/fa";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function Project() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, []);
   return (
     <div className="project-flex" data-aos="zoom-in">
       {Detail?.map((item, index) => {
