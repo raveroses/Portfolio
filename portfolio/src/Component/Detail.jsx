@@ -71,6 +71,15 @@ const Detail = [
     live: "https://bank-ten-pi.vercel.app/",
     github: "https://github.com/raveroses/bank-web.git",
   },
+  {
+    image: "/images/sneaker.jpg",
+    title: "TITILOPE SNEAKERS APP",
+    content:
+      "Titilope Sneakers is an eCommerce app designed to allow users to easily purchase sneakers in any quantity. Users can also view images of the sneakers to avoid the 'what I ordered vs. what I got' scenario.",
+    language: "Built with: HTML, CSS and React",
+    live: "https://e-commerce-shoes-store-react-six.vercel.app/",
+    github: "https://github.com/raveroses/E-commerce-shoes-store-React.git",
+  },
 ];
 
 export default Detail;
