@@ -80,6 +80,15 @@ const Detail = [
     live: "https://e-commerce-shoes-store-react-six.vercel.app/",
     github: "https://github.com/raveroses/E-commerce-shoes-store-React.git",
   },
+  {
+    image: "/images/ECOMMERCE.jpg",
+    title: "ECOMMERCE",
+    content:
+      "Diamond is an eCommerce store designed to allow users to easily purchase goods in any quantity,categories. Users can also view images of the sneakers to avoid the 'what I ordered vs. what I got' scenario.API also is also integrated.",
+    language: "Built with: HTML, CSS and React",
+    live: "https://e-commerce-project-fawn-beta.vercel.app/",
+    github: "https://github.com/raveroses/E-commerce-Project",
+  },
 ];
 
 export default Detail;
