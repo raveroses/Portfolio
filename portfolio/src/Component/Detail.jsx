@@ -89,6 +89,15 @@ const Detail = [
     live: "https://e-commerce-project-fawn-beta.vercel.app/",
     github: "https://github.com/raveroses/E-commerce-Project",
   },
+  {
+    image: "/images/hotelsite.jpg",
+    title: "Hotel Booking site",
+    content:
+      "Hotel webiste is  designed to allow users to easily book rom,rent car and hall.It wil also calculate their expense for them and paystack payment system was also integrated. Users can also view images of the rooms and hall.",
+    language: "Built with: HTML, CSS and React",
+    live: "https://hotel-booking-pi-umber.vercel.app/",
+    github: "https://github.com/raveroses/hotel-booking",
+  },
 ];
 
 export default Detail;
