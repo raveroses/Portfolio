@@ -40,17 +40,17 @@ html {
   -webkit-text-fill-color: transparent;
 }
 
-.navbar ul {
+.navbar .bigScreen {
   padding: 0;
   list-style: none;
   margin: 0;
 }
 
-.navbar ul li {
+.navbar .bigScreen li {
   float: left;
   margin-left: 20px;
 }
-.navbar ul li a {
+.navbar .bigScreen li a {
   font-size: 17px;
   font-weight: 500;
   text-decoration: none;
@@ -60,7 +60,7 @@ html {
   -webkit-text-fill-color: transparent;
   transition: text-decoration 1s ease, font-size 0.3s ease;
 }
-.navbar ul li a:hover {
+.navbar .bigScreen li a:hover {
   text-decoration: underline;
   font-size: 20px;
 }
@@ -336,4 +336,235 @@ form button {
   padding-top: 10px;
   color: white;
   line-height: 35px;
+}
+
+.harmburger {
+  display: none;
+}
+.none {
+  display: none;
+}
+.smallScreen {
+  display: none;
+}
+@media (max-width: 600px) {
+  .bigScreen {
+    display: none;
+  }
+  .header {
+    background-color: white;
+    padding: 20px 30px;
+    display: flex;
+    max-width: 100%;
+    justify-content: flex-start;
+  }
+  .sticky {
+    background-color: white;
+    padding: 20px 30px;
+  }
+  .logoname h5 {
+    font-size: 16px;
+  }
+  .navbar {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    max-width: 100%;
+    z-index: 99;
+  }
+  .harmburger {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-right: 30px;
+  }
+  .navbar .smallScreen {
+    background-color: white;
+    width: 200px;
+    height: 800px;
+    padding-left: 20px;
+    animation: transformation 2s ease;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  .navbar .smallScreen li {
+    float: none;
+    margin-left: 0px;
+    padding-top: 20px;
+  }
+  .navbar .smallScreen li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .navbar .smallScreen li a:hover {
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  @keyframes transformation {
+    100% {
+      transform: translateX(0%);
+    }
+    0% {
+      transform: translateX(100%);
+    }
+  }
+  .none {
+    display: block;
+  }
+
+  .none img {
+    width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: left;
+    height: 400px;
+    animation: Titilope 2s forwards;
+  }
+  .images {
+    display: none;
+  }
+  .flex {
+    flex-direction: column;
+    gap: 82px;
+  }
+  .none img {
+    width: 288px;
+    max-width: 100%;
+    height: 280px;
+  }
+  .detail {
+    width: 100%;
+    text-align: center;
+  }
+  .detail h5 {
+    font-size: 16px;
+  }
+  .detail h6 {
+    font-size: 15px;
+  }
+  .detail p {
+    font-size: 15px;
+  }
+  .home {
+    padding: 50px 30px;
+  }
+  .project-flex {
+    grid-template-columns: 1fr;
+    padding: 0px 30px;
+    max-width: 100%;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .connect {
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+  }
+
+  .firstbox {
+    box-shadow: 1px 1px 1px 1px lightgray;
+    padding: 20px 50px;
+    width: 90%;
+    text-align: center;
+    margin: 30px;
+    max-width: 100%;
+  }
+  .secondbox {
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 100%;
+    margin: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 30px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    border-radius: 7px;
+  }
+  form input {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid lightgray;
+    padding: 13px 5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  form button {
+    padding: 9px 40px;
+    border-radius: 6px;
+    margin-left: 10px;
+  }
+  form textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact-flex {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .auth-image img {
+    max-width: 100%;
+  }
+  .tech {
+    width: 100%;
+    margin-top: 90px;
+  }
+  .tech-flex {
+    gap: 25px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .techcon {
+    font-size: 38px;
+    color: white;
+  }
+  .st {
+    background-color: #014421;
+    padding: 3px 3px;
+    border-radius: 4px;
+  }
+  .experience {
+    width: 100%;
+    margin-top: 90px;
+    padding-bottom: 300px;
+    text-align: center;
+  }
+  .realExperience p {
+    font-size: 14px;
+    padding-top: 10px;
+    color: white;
+    line-height: 35px;
+  }
+  .realExperience h6 {
+    color: white;
+    font-size: 15px;
+  }
+  .experience h5 {
+    font-size: 16px;
+    color: white;
+    padding-bottom: 30px;
+  }
 }

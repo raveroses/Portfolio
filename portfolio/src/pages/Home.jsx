@@ -4,6 +4,10 @@ export default function Home() {
   return (
     <div className="home">
       <div className="flex">
+        <div className="none">
+          <img src="/images/waris.JPG" alt="author" />
+        </div>
+
         <div className="detail">
           <h5>Front-End Developer</h5>
           <h6>Results-Driven Front-End Developer </h6>
