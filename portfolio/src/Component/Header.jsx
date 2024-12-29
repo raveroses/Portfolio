@@ -91,9 +91,8 @@ export default function Header() {
             style={{ display: display ? "block" : "none" }}
           >
             <li>
-              {" "}
               <FaTimes
-                className="harmburger"
+                className="harmburgers"
                 style={{ display: display ? "block" : "none" }}
                 onClick={handleHamburger}
               />

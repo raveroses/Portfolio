@@ -378,6 +378,9 @@ form button {
     margin-bottom: 20px;
     padding-right: 30px;
   }
+  .harmburgers {
+    font-size: 30px;
+  }
   .navbar .smallScreen {
     background-color: white;
     width: 200px;
@@ -479,7 +482,7 @@ form button {
     padding: 20px 50px;
     width: 90%;
     text-align: center;
-    margin: 30px;
+    margin: auto;
     max-width: 100%;
   }
   .secondbox {
@@ -487,7 +490,7 @@ form button {
     justify-content: flex-start;
     width: 90%;
     max-width: 100%;
-    margin: 30px;
+    margin: auto;
   }
   form {
     display: flex;
