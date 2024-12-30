@@ -97,19 +97,19 @@ export default function Header() {
                 onClick={handleHamburger}
               />
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to="/"> Home</Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to="/project">Portfolio</Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link to="/author">About</Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link
                 to="https://github.com/raveroses"
                 target="_blank"
@@ -118,7 +118,7 @@ export default function Header() {
                 <FaGithub className="icon" />
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link
                 to="https://x.com/TitilopeNode"
                 target="_blank"
@@ -127,7 +127,7 @@ export default function Header() {
                 <FaXTwitter className="icon" />
               </Link>
             </li>
-            <li>
+            <li onClick={handleHamburger}>
               <Link
                 to="https://web.facebook.com/profile.php?id=100062592943567"
                 target="_blank"
