@@ -85,7 +85,7 @@ const Detail = [
     title: "ECOMMERCE",
     content:
       "Diamond is an eCommerce store designed to allow users to easily purchase goods in any quantity,categories. Users can also view images of the sneakers to avoid the 'what I ordered vs. what I got' scenario.API also is also integrated.",
-    language: "Built with: HTML, CSS and React",
+    language: "Built with: React and CSS",
     live: "https://e-commerce-project-fawn-beta.vercel.app/",
     github: "https://github.com/raveroses/E-commerce-Project",
   },
@@ -94,9 +94,27 @@ const Detail = [
     title: "Hotel Booking site",
     content:
       "Hotel webiste is  designed to allow users to easily book rom,rent car and hall.It wil also calculate their expense for them and paystack payment system was also integrated. Users can also view images of the rooms and hall.",
-    language: "Built with: HTML, CSS and React",
+    language: "Built with: React and CSS",
     live: "https://hotel-booking-pi-umber.vercel.app/",
     github: "https://github.com/raveroses/hotel-booking",
+  },
+  {
+    image: "/images/movie.jpg",
+    title: "Axionis Movies",
+    content:
+      "Axionis movies is a web application where you can watch movie thriller , they can search as well, user also can have personal account where they can even upload their image, also authentication is included for user protection,user can sign up, login , change password and reset password. It is also mobile reponsive",
+    language: "Built with:  React and Tailwind",
+    live: "https://form-validation-six-gold.vercel.app/",
+    github: "https://github.com/raveroses/FormValidation",
+  },
+  {
+    image: "/images/axios.jpg",
+    title: "Axionis Movies",
+    content:
+      "Axionis chatbot is a web application where user can prompt any questions and it will surely give response. It's built for people who know the usefulness of AI and encourage people who dont to know the value",
+    language: "Built with:  React,Tailwind and API",
+    live: "https://axios-chatbot.vercel.app/",
+    github: "https://github.com/raveroses/Axios-chatbot",
   },
 ];
 
