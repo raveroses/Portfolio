@@ -109,7 +109,7 @@ const Detail = [
   },
   {
     image: "/images/axios.jpg",
-    title: "Axionis Movies",
+    title: "Axionis Chatbot",
     content:
       "Axionis chatbot is a web application where user can prompt any questions and it will surely give response. It's built for people who know the usefulness of AI and encourage people who dont to know the value",
     language: "Built with:  React,Tailwind and API",
