@@ -117,10 +117,10 @@ const Detail = [
     github: "https://github.com/raveroses/Axios-chatbot",
   },
   {
-    image: "/images/ECOMMERCE.jpg",
+    image: "/images/shoppy.jpg",
     title: "Shoppy store",
     content:
-      "Shoppy store is an E-commerce site I rebuilt with multiple features. It is an eCommerce site that allow user to shop seamlessly. They can add to cart or add wishlist.Not only that, the authentication protects the routes (sign up, login,change password and log out. User also can upload their profile image. paystack also integrated for payment testrun",
+      "Shoppy store is an E-commerce site I rebuilt with multiple features. It is an eCommerce site that allow user to shop seamlessly. They can add to cart or add wishlist also search and filter category.Not only that, the authentication protects the routes (sign up, login,change password and log out. User also can upload their profile image. paystack also integrated for payment testrun",
     language: "Built with:  React, Typescript ,Tailwind and API",
     live: "https://shoppystore-lac.vercel.app/",
     github: "https://github.com/raveroses/Ecommerce-Typescript",
