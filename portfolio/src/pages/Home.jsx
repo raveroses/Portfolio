@@ -21,7 +21,7 @@ export default function Home() {
           </p>
         </div>
         <div className="images">
-          <img src="/images/waris.JPG" alt="author" />
+          <img src="/images/realestate.jpg" alt="author" />
         </div>
       </div>
 

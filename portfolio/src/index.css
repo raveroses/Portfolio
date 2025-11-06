@@ -14,7 +14,7 @@ html {
 
 .header {
   background-color: white;
-  padding: 20px 80px;
+  padding: 20px 150px;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -35,9 +35,6 @@ html {
 .logoname h5 {
   font-size: 20px;
   font-weight: 700;
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .navbar .bigScreen {
@@ -65,7 +62,7 @@ html {
   font-size: 20px;
 }
 .home {
-  padding: 50px 80px;
+  padding: 150px 150px;
 }
 
 .images img {
@@ -89,7 +86,7 @@ html {
 .detail {
   color: white;
   margin-left: 0px;
-  width: 75%;
+  width: 55%;
 }
 .detail h5 {
   font-size: 20px;
@@ -120,7 +117,7 @@ html {
 }
 
 .project-image img {
-  width: 350px;
+  width: 100%;
 }
 
 .written {
@@ -151,7 +148,7 @@ html {
   gap: 57px;
   margin-top: 30px;
   justify-content: center;
-  padding: 0px 50px;
+  padding: 80px 150px;
 }
 .live a {
   font-size: 14px;
@@ -179,8 +176,8 @@ html {
   padding: 7px 10px;
   border-radius: 3px;
   position: fixed;
-  top: 300px;
-  transform: rotate(270deg) translate(40px, 1113px);
+  top: 700px;
+  transform: rotate(270deg) translate(40px, 1690px);
 }
 
 .whatsapp a {

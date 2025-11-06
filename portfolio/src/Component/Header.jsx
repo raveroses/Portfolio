@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <div className={check ? "sticky" : "header"}>
       <div className="logoname">
-        <h5>{"{TitilopeNode=>"}</h5>
+        <h5> Diamond</h5>
       </div>
 
       <div className="navbar">

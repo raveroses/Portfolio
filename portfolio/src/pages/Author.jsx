@@ -17,7 +17,7 @@ export default function Author() {
   return (
     <div className="contact-flex">
       <div className="auth-image" data-aos="fade-down-left">
-        <img src="/images/auth.JPG" alt="Author-image" />
+        <img src="/images/realestate.jpg" alt="Author-image" />
       </div>
       <div className="detail" data-aos="fade-right">
         <h5>About Me</h5>
