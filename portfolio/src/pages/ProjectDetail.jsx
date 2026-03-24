@@ -177,9 +177,9 @@ export default function ProjectDetail() {
 
       <section className="bg-foreground w-full text-white text-center md:flex hidden flex-col justify-center py-10 ">
         <h3 className="text-md font-semibold">Want to see more?</h3>
-        <Link to="#">
+        <HashLink smooth to="/#project">
           <h1 className="text-4xl font-bold underline">View All Projects</h1>
-        </Link>
+        </HashLink>
       </section>
 
       <section className="md:hidden block">
