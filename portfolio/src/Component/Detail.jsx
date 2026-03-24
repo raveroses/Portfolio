@@ -1,130 +1,109 @@
-const Detail = [
+export const Detail = [
   {
-    image: "/images/get.jpg",
-    title: "GETLINK",
-    content:
-      "GetLnkdn is a coding challenge hosted on Twitter, featuring three distinct pages: the home page, contact page, and registration page. The website is designed for desktop view.",
-    language: "Built with: HTML, CSS, and JavaScript",
-    live: "https://virtual-gules.vercel.app/",
-    github: "https://github.com/raveroses/virtual2.git",
-  },
-  {
-    image: "/images/QUIZ.jpg",
-    title: "QUIZ APP",
-    content:
-      "Quiz App is an application where you can answer 50 questions and get your results immediately after completion. A countdown timer is included for each question.",
-    language: "Built with: HTML, CSS, and JavaScript",
-    live: "https://web3bridge-odekunle-waris-quiz-application.vercel.app/",
-    github: "https://github.com/raveroses/web3Bridges-QuizAss.git",
-  },
-  {
-    image: "/images/subscription.jpg",
-    title: "SUBSCRIPTION APP",
-    content:
-      "The Subscription App allows users to select a subscription plan, either monthly or yearly, based on their preferences. It calculates the total cost at the end of the selected plan.",
-    language: "Built with: HTML, CSS, and JavaScript",
-    live: "https://web-bridges-ass-subscription.vercel.app/",
-    github: "https://github.com/raveroses/WebBridgesAssSubscription.git",
-  },
-  {
-    image: "/images/bank.jpg",
-    title: "BANK WEBSITE",
-    content:
-      "This is a simple landing page for a bank, designed to showcase mobile responsiveness. The project focuses on how a sidebar works on mobile devices.",
-    language: "Built with: HTML, CSS, and JavaScript",
-    live: "https://odekunlewarisweb3assignmentpages-raveroses-projects.vercel.app/",
-    github: "https://github.com/raveroses/web3bridges-Ass.git",
-  },
-  {
-    image: "/images/card.jpg",
-    title: "CARD VALIDATION",
-    content:
-      "This is a card validation app where users must input all card details for verification. It includes real-life bank card information, such as the expiry date and CVC code.",
-    language: "Built with: HTML, Tailwind CSS, and JavaScript",
-    live: "https://card-weld-beta.vercel.app/",
-    github: "https://github.com/raveroses/cardValidation.git",
-  },
-  {
-    image: "/images/sneaker.jpg",
-    title: "ECOMMERCE-APP (Titilope Sneakers)",
-    content:
-      "Titilope Sneakers is an eCommerce app designed to allow users to easily purchase sneakers in any quantity. Users can also view images of the sneakers to avoid the 'what I ordered vs. what I got' scenario.",
-    language: "Built with: HTML, CSS, and JavaScript",
-    live: "https://sneaker-self.vercel.app/",
-    github: "https://github.com/raveroses/E-commerce-shoe-store.git",
-  },
-  {
-    image: "/images/cake (2).jpg",
-    title: "ECOMMERCE-APP (Cake Store)",
-    content:
-      "This is an eCommerce app for cakes, allowing users to purchase cakes of their choice and view them from different angles. It also includes a quantity selector. Receipts are guaranteed after purchase.",
-    language: "Built with: HTML, CSS, and JavaScript",
-    live: "https://cart-khaki-six.vercel.app/",
-    github: "https://github.com/raveroses/My-first-Add-to-CartProject.git",
-  },
-  {
-    image: "/images/titi.jpg",
-    title: "TITILOPENODE BANK APP",
-    content:
-      "TitilopeNode Bank App allows users to create accounts and view customer testimonials. It also provides information about the bank.",
-    language: "Built with: HTML, Tailwind CSS, and JavaScript",
-    live: "https://bank-ten-pi.vercel.app/",
-    github: "https://github.com/raveroses/bank-web.git",
-  },
-  {
-    image: "/images/sneaker.jpg",
-    title: "TITILOPE SNEAKERS APP",
-    content:
-      "Titilope Sneakers is an eCommerce app designed to allow users to easily purchase sneakers in any quantity. Users can also view images of the sneakers to avoid the 'what I ordered vs. what I got' scenario.",
-    language: "Built with: HTML, CSS and React",
-    live: "https://e-commerce-shoes-store-react-six.vercel.app/",
-    github: "https://github.com/raveroses/E-commerce-shoes-store-React.git",
-  },
-  {
-    image: "/images/ECOMMERCE.jpg",
-    title: "ECOMMERCE",
-    content:
-      "Diamond is an eCommerce store designed to allow users to easily purchase goods in any quantity,categories. Users can also view images of the sneakers to avoid the 'what I ordered vs. what I got' scenario.API also is also integrated.",
-    language: "Built with: React and CSS",
-    live: "https://e-commerce-project-fawn-beta.vercel.app/",
-    github: "https://github.com/raveroses/E-commerce-Project",
-  },
-  {
+    id: 1,
     image: "/images/hotelsite.jpg",
+    subImages: [1, 2, 3, 4],
+    shortDetail:
+      "A multi-functional booking platform for hotels, cars, and event halls with integrated payment and cost estimation.",
+    overview:
+      "This hotel booking platform allows users to seamlessly book rooms, rent cars, and reserve event halls. It includes an expense calculator to estimate costs and integrates Paystack for payment processing. Users can also explore images of rooms and halls before making reservations.",
+    challenges:
+      "Managing multiple booking options (rooms, cars, halls) while keeping the UI intuitive. Handling dynamic cost calculation and integrating a reliable payment system.",
+    solution:
+      "Structured the application state to handle different booking types efficiently and implemented reusable components for scalability. Built a custom cost calculator for real-time updates and integrated Paystack API for secure payment testing.",
+    techStack: ["React", "CSS"],
+    features: [
+      "Hotel booking system",
+      "Car rental service",
+      "Availability checking",
+      "Hotel, car, and hall preview",
+      "Paystack payment integration (testing)",
+      "Contact form for inquiries",
+    ],
     title: "Hotel Booking site",
-    content:
-      "Hotel webiste is  designed to allow users to easily book rom,rent car and hall.It wil also calculate their expense for them and paystack payment system was also integrated. Users can also view images of the rooms and hall.",
-    language: "Built with: React and CSS",
     live: "https://hotel-booking-pi-umber.vercel.app/",
-    github: "https://github.com/raveroses/hotel-booking",
   },
   {
+    id: 2,
     image: "/images/movie.jpg",
+    subImages: [],
+    shortDetail:
+      "A responsive movie platform with authentication, search functionality, and media playback features.",
+    overview:
+      "Axionis Movies is a web application that allows users to stream movie trailers and search for content. It features a complete authentication system, enabling users to sign up, log in, update their profiles, upload images, and manage passwords. The application is fully responsive across devices.",
+    challenges:
+      "Implementing secure authentication and managing user sessions while ensuring smooth navigation. Handling media playback and search performance efficiently.",
+    solution:
+      "Integrated authentication workflows with proper state management and protected routes. Optimized search functionality and ensured smooth media playback using efficient component structure and lazy loading where necessary.",
+    techStack: ["React", "Tailwind"],
+    features: [
+      "User authentication and profile management",
+      "Movie details display",
+      "Integrated movie player",
+      "Search functionality",
+    ],
     title: "Axionis Movies",
-    content:
-      "Axionis movies is a web application where you can watch movie thriller , they can search as well, user also can have personal account where they can even upload their image, also authentication is included for user protection,user can sign up, login , change password and reset password. It is also mobile reponsive",
-    language: "Built with:  React and Tailwind",
     live: "https://form-validation-six-gold.vercel.app/",
-    github: "https://github.com/raveroses/FormValidation",
   },
   {
+    id: 3,
     image: "/images/axios.jpg",
+    subImages: [],
+    shortDetail:
+      "An AI-powered chatbot application that provides real-time responses to user queries through API integration.",
+    overview:
+      "Axionis Chatbot is an AI-powered web application that enables users to ask questions and receive intelligent responses. It is designed to showcase the practical value of AI and encourage wider adoption among users.",
+    challenges:
+      "Handling API response delays and maintaining a smooth conversational experience. Managing user input and rendering dynamic responses effectively.",
+    solution:
+      "Implemented loading states and optimized API calls to improve user experience. Designed a clean chat interface with efficient state updates to handle real-time conversations.",
+    techStack: ["React", "Tailwind", "API"],
+    features: ["Interactive AI chat functionality"],
     title: "Axionis Chatbot",
-    content:
-      "Axionis chatbot is a web application where user can prompt any questions and it will surely give response. It's built for people who know the usefulness of AI and encourage people who dont to know the value",
-    language: "Built with:  React,Tailwind and API",
+    language: "Built with: React, Tailwind and API",
     live: "https://axios-chatbot.vercel.app/",
-    github: "https://github.com/raveroses/Axios-chatbot",
   },
   {
+    id: 4,
     image: "/images/shoppy.jpg",
+    subImages: [],
+    shortDetail:
+      "A modern eCommerce platform with authentication, cart management, and seamless checkout experience.",
+    overview:
+      "Shoppy Store is a feature-rich eCommerce platform that provides a seamless shopping experience. Users can browse products, add items to cart or wishlist, and filter by categories. It includes secure authentication, profile management, and Paystack integration for payment testing.",
+    challenges:
+      "Managing global state for cart and wishlist across the application. Implementing secure authentication and handling protected routes with a smooth user experience.",
+    solution:
+      "Used centralized state management for cart and wishlist to ensure consistency across pages. Implemented authentication with route protection and optimized API interactions for better performance.",
+    techStack: ["NextJs", "Typescript", "Tailwind", "API", "Supabase"],
+    features: [
+      "Product checkout system",
+      "Payment integration (testing)",
+      "Detailed product view",
+    ],
     title: "Shoppy store",
-    content:
-      "Shoppy store is an E-commerce site I rebuilt with multiple features. It is an eCommerce site that allow user to shop seamlessly. They can add to cart or add wishlist also search and filter category.Not only that, the authentication protects the routes (sign up, login,change password and log out. User also can upload their profile image. paystack also integrated for payment testrun",
-    language: "Built with:  React, Typescript ,Tailwind and API",
     live: "https://shoppystore-lac.vercel.app/",
-    github: "https://github.com/raveroses/Ecommerce-Typescript",
+  },
+  {
+    id: 5,
+    image: "/images/shoppy.jpg",
+    subImages: [],
+    shortDetail:
+      "An audio-focused eCommerce platform with real-time data handling and advanced product interactions.",
+    overview:
+      "Audiophile is an eCommerce platform focused on headphones and audio products. It allows users to browse, search, and filter products, as well as manage carts and wishlists. It also includes profile image uploads and Paystack integration for payment testing, with product data managed using Convex.",
+    challenges:
+      "Managing real-time product data and ensuring consistent updates across the application. Handling complex user interactions like filtering and cart updates.",
+    solution:
+      "Leveraged Convex for real-time data handling and ensured efficient state synchronization across components. Built reusable UI components and optimized filtering logic for better performance.",
+    techStack: ["NextJS", "Typescript", "Tailwind", "API", "Convex"],
+    features: [
+      "Product checkout system",
+      "Payment integration (testing)",
+      "Detailed product view",
+      "Product data management with Convex",
+    ],
+    title: "Audiophile",
+    live: "https://ecommerce-hng-seven.vercel.app/",
   },
 ];
-
-export default Detail;

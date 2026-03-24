@@ -1,571 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap");
+@import "tailwindcss";
+
+/* =====================
+   CSS VARIABLES
+===================== */
+:root {
+  --primary-100: #1a1a1a;
+   /* --primary-200: #c06161; */
+  --primary-200: #333333;
+  /*--primary-400: #333333;
+  --primary-500: #333333;
+  --primary-600: #333333;
+  --primary-700: #333333; */
+
+  /* =========================
+     NEUTRAL (Warm Whites)
+  ========================== */
+
+  --neutral-100: #ffffff;
+  --neutral-200: #f8f7f7;
+  --neutral-300: #f4efee;
+  --neutral-400: #f2e9e7;
+  --neutral-500: #f2e5e0;
+  --neutral-600: #f4e4db;
+  --neutral-700: #f6e6d8;
+  --neutral-800: #f9e9d8;
+  --neutral-900: #fcefdb;
+  --neutral-1000: #fef5e2;
+
+  /* Base */
+  --background: #ffffff;
+  --foreground: #1c1c1c;
 }
 
-body,
-html {
-  background-color: rgb(42, 40, 40);
-  height: 100%;
-  font-family: "Kumbh Sans", sans-serif;
+/* =====================
+   BASE STYLES
+===================== */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    @apply m-0 p-0 box-border;
+  }
+
+  html,
+  body {
+    @apply h-full;
+    font-family: "Afacad Flux", sans-serif;
+  }
 }
 
-.header {
-  background-color: white;
-  padding: 20px 150px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
-.sticky {
-  background-color: white;
-  padding: 20px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-}
-.logoname h5 {
-  font-size: 20px;
-  font-weight: 700;
+@theme {
+  /* Base */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-neutral-100: var(--neutral-100);
+  --color-neutral-200: var(--neutral-200);
+  --color-neutral-300: var(--neutral-300);
+  --color-neutral-400: var(--neutral-400);
+  --color-neutral-500: var(--neutral-500);
+  --color-neutral-600: var(--neutral-600);
+  --color-neutral-700: var(--neutral-700);
+  --color-neutral-800: var(--neutral-800);
+  --color-neutral-900: var(--neutral-900);
+  --color-neutral-1000: var(--neutral-1000);
+
+  --color-primary-100: var(--primary-100);
+ --color-primary-200: var(--primary-200);
+   /* --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700); */
 }
 
-.navbar .bigScreen {
-  padding: 0;
-  list-style: none;
-  margin: 0;
+/* =====================
+   BODY DEFAULT
+===================== */
+body {
+  background-color:;
+  color:;
 }
 
-.navbar .bigScreen li {
-  float: left;
-  margin-left: 20px;
-}
-.navbar .bigScreen li a {
-  font-size: 17px;
-  font-weight: 500;
-  text-decoration: none;
-  text-align: center;
-  background: linear-gradient(to right, red, blue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: text-decoration 1s ease, font-size 0.3s ease;
-}
-.navbar .bigScreen li a:hover {
-  text-decoration: underline;
-  font-size: 20px;
-}
-.home {
-  padding: 150px 150px;
+/* =====================
+   DARK MODE SUPPORT
+===================== */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-neutral-110: #0a0a0a;
+    --primary-neutral-50: #ededed;
+  }
 }
 
-.images img {
-  width: 400px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: left;
-  height: 400px;
-  animation: Titilope 2s forwards;
-}
-
+/* =====================
+   ANIMATIONS
+===================== */
 @keyframes Titilope {
-  0% {
+  from {
     transform: rotate(0deg);
   }
-  100% {
+  to {
     transform: rotate(360deg);
   }
 }
 
-.detail {
-  color: white;
-  margin-left: 0px;
-  width: 55%;
-}
-.detail h5 {
-  font-size: 20px;
-  color: whitesmoke;
-  transition: text-decoration 1s ease, font-size 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.detail h6 {
-  font-size: 17px;
-  margin-top: 10px;
-  margin-bottom: 15px;
-}
-.detail p {
-  line-height: 35px;
-  color: white;
-  font-size: 17px;
-}
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-}
-
-.icon {
-  font-size: 20px;
-}
-
-.project-image img {
-  width: 100%;
-}
-
-.written {
-  color: white;
-  padding: 20px;
-}
-.written h5 {
-  font-size: 15px;
-  font-weight: 600;
-}
-.written h6 {
-  font-size: 13px;
-  padding-top: 10px;
-}
-.written p {
-  font-size: 15px;
-  line-height: 25px;
-}
-.content {
-  border: none;
-  background-color: transparent;
-  box-shadow: 1px 1px 1px white;
-  border-radius: 10px;
-}
-.project-flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 57px;
-  margin-top: 30px;
-  justify-content: center;
-  padding: 80px 150px;
-}
-.live a {
-  font-size: 14px;
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-.view a {
-  font-size: 14px;
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-.code {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.whatsapp {
-  background-color: #014421;
-  width: 130px;
-  padding: 7px 10px;
-  border-radius: 3px;
-  position: fixed;
-  top: 700px;
-  transform: rotate(270deg) translate(40px, 1690px);
-}
-
-.whatsapp a {
-  color: white;
-  font-size: 15px;
-  text-decoration: none;
-}
-.firstbox h5 {
-  color: whitesmoke;
-  font-size: 25px;
-  font-weight: 600;
-  padding-bottom: 15px;
-}
-.connect {
-  display: flex;
-  align-items: flex-start;
-  align-content: center;
-  justify-content: center;
-  margin-top: 100px;
-}
-.firstbox {
-  box-shadow: 1px 1px 1px 1px lightgray;
-  padding: 40px 40px 90px 40px;
-  width: 300px;
-  border-radius: 8px;
-}
-.firstbox a {
-  display: block;
-  font-size: 15px;
-  text-decoration: none;
-  font-weight: 500;
-  color: whitesmoke;
-  padding-bottom: 30px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
-  width: 850px;
-  padding: 20px 30px;
-  box-shadow: 1px 1px 1px 1px lightgray;
-  border-radius: 7px;
-}
-form label {
-  color: white;
-  font-size: 18px;
-  text-align: left;
-  margin-bottom: 7px;
-}
-form input {
-  width: 100%;
-  border: 1px solid lightgray;
-  padding: 13px 5px;
-  background-color: transparent;
-  color: white;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  font-size: 17px;
-}
-form input:focus {
-  outline: none;
-}
-form textarea {
-  border: 1px solid lightgray;
-  padding: 30px 5px;
-  background-color: transparent;
-  color: white;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  font-size: 17px;
-  width: 100%;
-  resize: none;
-}
-form textarea:focus {
-  outline: none;
-}
-
-form button {
-  border: none;
-  background-color: red;
-  color: white;
-  padding: 11px 50px;
-  font-size: 14px;
-  font-weight: 500;
-  border-radius: 5px;
-  margin-left: 660px;
-}
-
-.contact-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 120px;
-}
-
-.tech {
-  width: 75%;
-  margin-top: 90px;
-}
-.tech h5 {
-  color: white;
-  text-align: left;
-  font-size: 20px;
-  padding-bottom: 30px;
-}
-
-.auth-image img {
-  width: 300px;
-  margin-bottom: 40px;
-}
-
-.tech-flex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-  gap: 90px;
-}
-.st {
-  background-color: #014421;
-  padding: 5px 15px;
-  border-radius: 4px;
-}
-.techcon {
-  font-size: 50px;
-  color: white;
-}
-
-.experience {
-  width: 75%;
-  margin-top: 90px;
-  padding-bottom: 300px;
-}
-
-.experience h5 {
-  font-size: 20px;
-  color: white;
-  padding-bottom: 30px;
-}
-
-.realExperience h6 {
-  color: white;
-  font-size: 17px;
-}
-
-.realExperience p {
-  font-size: 17px;
-  padding-top: 10px;
-  color: white;
-  line-height: 35px;
-}
-
-.harmburger {
-  display: none;
-}
-.none {
-  display: none;
-}
-.smallScreen {
-  display: none;
-}
-@media (max-width: 600px) {
-  .bigScreen {
-    display: none;
+@keyframes transformation {
+  from {
+    transform: translateX(100%);
   }
-  .header {
-    background-color: white;
-    padding: 20px 30px;
-    display: flex;
-    max-width: 100%;
-    justify-content: flex-start;
-  }
-  .sticky {
-    background-color: white;
-    padding: 20px 30px;
-  }
-  .logoname h5 {
-    font-size: 16px;
-  }
-  .navbar {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    max-width: 100%;
-    z-index: 99;
-  }
-  .harmburger {
-    display: block;
-    font-size: 30px;
-    margin-bottom: 20px;
-    padding-right: 30px;
-  }
-  .harmburgers {
-    font-size: 30px;
-  }
-  .navbar .smallScreen {
-    background-color: white;
-    width: 200px;
-    height: 800px;
-    padding-left: 20px;
-    animation: transformation 2s ease;
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    margin: 0;
-    list-style: none;
-    overflow: hidden;
-  }
-  .navbar .smallScreen li {
-    float: none;
-    margin-left: 0px;
-    padding-top: 20px;
-  }
-  .navbar .smallScreen li a {
-    color: black;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  .navbar .smallScreen li a:hover {
-    text-decoration: underline;
-    font-size: 15px;
-  }
-
-  @keyframes transformation {
-    100% {
-      transform: translateX(0%);
-    }
-    0% {
-      transform: translateX(100%);
-    }
-  }
-  .none {
-    display: block;
-  }
-
-  .none img {
-    width: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: left;
-    height: 400px;
-    animation: Titilope 2s forwards;
-  }
-  .images {
-    display: none;
-  }
-  .flex {
-    flex-direction: column;
-    gap: 82px;
-  }
-  .none img {
-    width: 288px;
-    max-width: 100%;
-    height: 280px;
-  }
-  .detail {
-    width: 100%;
-    text-align: center;
-  }
-  .detail h5 {
-    font-size: 16px;
-  }
-  .detail h6 {
-    font-size: 15px;
-  }
-  .detail p {
-    font-size: 15px;
-  }
-  .home {
-    padding: 50px 30px;
-  }
-  .project-flex {
-    grid-template-columns: 1fr;
-    padding: 0px 30px;
-    max-width: 100%;
-  }
-
-  .project-image img {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  .connect {
-    display: flex;
-    align-items: flex-start;
-    align-content: center;
-    justify-content: center;
-    margin-top: 100px;
-    flex-direction: column;
-  }
-
-  .firstbox {
-    box-shadow: 1px 1px 1px 1px lightgray;
-    padding: 20px 50px;
-    width: 90%;
-    text-align: center;
-    margin: auto;
-    max-width: 100%;
-    margin-bottom: 20px;
-  }
-  .secondbox {
-    display: flex;
-    justify-content: flex-start;
-    width: 90%;
-    max-width: 100%;
-    margin: auto;
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 100%;
-    padding: 20px 30px;
-    box-shadow: 1px 1px 1px 1px lightgray;
-    border-radius: 7px;
-  }
-  form input {
-    width: 100%;
-    max-width: 100%;
-    border: 1px solid lightgray;
-    padding: 13px 5px;
-    background-color: transparent;
-    color: white;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 17px;
-  }
-  form button {
-    padding: 9px 40px;
-    border-radius: 6px;
-    margin-left: 10px;
-  }
-  form textarea {
-    width: 100%;
-    max-width: 100%;
-  }
-  .contact-flex {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .auth-image img {
-    max-width: 100%;
-  }
-  .tech {
-    width: 100%;
-    margin-top: 90px;
-  }
-  .tech-flex {
-    gap: 25px;
-    width: 100%;
-    max-width: 100%;
-  }
-  .techcon {
-    font-size: 38px;
-    color: white;
-  }
-  .st {
-    background-color: #014421;
-    padding: 3px 3px;
-    border-radius: 4px;
-  }
-  .experience {
-    width: 100%;
-    margin-top: 90px;
-    padding-bottom: 300px;
-    text-align: center;
-  }
-  .realExperience p {
-    font-size: 14px;
-    padding-top: 10px;
-    color: white;
-    line-height: 35px;
-  }
-  .realExperience h6 {
-    color: white;
-    font-size: 15px;
-  }
-  .experience h5 {
-    font-size: 16px;
-    color: white;
-    padding-bottom: 30px;
+  to {
+    transform: translateX(0%);
   }
 }

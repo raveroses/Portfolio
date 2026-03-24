@@ -1,17 +1,12 @@
-import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { IoMenu } from "react-icons/io5";
-import { FaTimes } from "react-icons/fa";
+import { motion } from "motion/react";
 export default function Header() {
   const [check, setChecker] = useState(false);
 
   const handleScroll = () => {
-    const scrollPosition = window.scrollY; // Get the current vertical scroll position
+    const scrollPosition = window.scrollY;
     console.log("Current scroll position:", scrollPosition);
-    if (window.scrollY > 39) {
+    if (scrollPosition > 39) {
       setChecker(true);
     } else {
       setChecker(false);
@@ -19,126 +14,45 @@ export default function Header() {
   };
 
   useEffect(() => {
-    // Add the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); // Empty dependency array means this effect runs once when the component mounts
-
-  const [display, setDisplay] = useState(false);
-  const handleHamburger = () => {
-    setDisplay((prev) => !prev);
-  };
+  }, []);
 
   return (
-    <div className={check ? "sticky" : "header"}>
-      <div className="logoname">
-        <h5> Diamond</h5>
-      </div>
+    <div
+      className={`${
+        check ? "fixed top-0  z-50" : "static"
+      } shadow-md bg-background py-5 flex justify-between items-center w-full px-5 lg:px-100 md:px-20`}
+    >
+      <h5 className="text-xl font-bold"> Diamond</h5>
 
-      <div className="navbar">
-        <ul className="bigScreen">
-          <li>
-            <Link to="/"> Home</Link>
-          </li>
-          <li>
-            <Link to="/project">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/author">About</Link>
-          </li>
-          <li>
-            <Link
-              to="https://github.com/raveroses"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaGithub className="icon" />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://x.com/TitilopeNode"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaXTwitter className="icon" />
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="https://web.facebook.com/profile.php?id=100062592943567"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebook className="icon" />
-            </Link>
-          </li>
-        </ul>
-        <div className="harmburger">
-          <IoMenu
-            onClick={handleHamburger}
-            style={{ display: !display ? "block" : "none" }}
-          />
-          <ul
-            className="smallScreen"
-            style={{ display: display ? "block" : "none" }}
-          >
-            <li>
-              <FaTimes
-                className="harmburgers"
-                style={{ display: display ? "block" : "none" }}
-                onClick={handleHamburger}
-              />
-            </li>
-            <li onClick={handleHamburger}>
-              <Link to="/"> Home</Link>
-            </li>
-            <li onClick={handleHamburger}>
-              <Link to="/project">Portfolio</Link>
-            </li>
-            <li onClick={handleHamburger}>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li onClick={handleHamburger}>
-              <Link to="/author">About</Link>
-            </li>
-            <li onClick={handleHamburger}>
-              <Link
-                to="https://github.com/raveroses"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="icon" />
-              </Link>
-            </li>
-            <li onClick={handleHamburger}>
-              <Link
-                to="https://x.com/TitilopeNode"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaXTwitter className="icon" />
-              </Link>
-            </li>
-            <li onClick={handleHamburger}>
-              <Link
-                to="https://web.facebook.com/profile.php?id=100062592943567"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFacebook className="icon" />
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <a
+        href="https://wa.me/2348163700384?text=Hi%2C%20I%27m%20interested%20in%20your%20services"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <motion.button
+          className="text-foreground border border-foreground text-sm  md:font-bold font-semibold md:px-3 p-2 py-2 rounded cursor-pointer"
+          initial={{
+            scale: 1,
+            opacity: 1,
+            backgroundColor: "transparent",
+            color: "var(--foreground)",
+            
+          }}
+          whileHover={{
+            scale: 1.05,
+            backgroundColor: "var(--foreground)",
+            color: "var(--background)",
+            transition: { duration: 0.2 },
+          }}
+        >
+          Contact Me
+        </motion.button>
+      </a>
     </div>
   );
 }
